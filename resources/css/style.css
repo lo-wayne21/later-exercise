@@ -2,7 +2,7 @@
 /*** General CSS ***/
 * { box-sizing: border-box; }
 img { width: 100%; height: auto; }
-body { font-size: 16px; line-height: 1.5; font-family: 'Rubik'; font-weight: 400; }
+body { font-size: 16px; line-height: 1.5; font-family: 'Rubik'; font-weight: 400; padding: 0; margin: 0; }
 h2 { font-family: 'Poppins'; font-weight: 500; }
 h4 { font-family: 'Rubik'; font-weight: 500; color: #000; }
 p.text-light { color: #7B8994; }
@@ -14,8 +14,18 @@ p.text-light { color: #7B8994; }
 .col-2 { width: 66.66%; }
 
 .btn { display: inline-block; font-size: 0.9365em; text-decoration: none; border-radius: 100px; border: 2px solid #4140B0; padding: 10px 30px; color: #4140B0; }
+.btn:hover, .btn:active, .btn:focus { background: #4140B0; color: #fff; }
+
 .btn.white-btn { color: #fff; border-color: #fff; }
+.btn.white-btn:hover, .btn.white-btn:active, .btn.white-btn:focus { background: #fff; color: #4040b0; }
+
+.btn .chevron { position: relative; }
 .btn .chevron img { width: auto; display: inline-block; margin-left: 5px; }
+.btn .chevron img.hover { position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: margin-left 0.2s ease; }
+
+.btn:hover .chevron img.hover,
+.btn:active .chevron img.hover,
+.btn:focus .chevron img.hover { z-index: 10; margin-left: 1px; }
 
 /*** Header CSS ***/
 header { padding: 56px 0; background: #fff; }
