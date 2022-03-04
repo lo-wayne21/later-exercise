@@ -1,0 +1,71 @@
+/*** CSS ***/
+/*** General CSS ***/
+* { box-sizing: border-box; }
+img { width: 100%; height: auto; }
+body { font-size: 16px; line-height: 1.5; font-family: 'Rubik'; font-weight: 400; }
+h2 { font-family: 'Poppins'; font-weight: 500; }
+h4 { font-family: 'Rubik'; font-weight: 500; color: #000; }
+p.text-light { color: #7B8994; }
+.container { display: block; width: 100%; max-width: 1366px; padding-left: 45px; padding-right: 45px; margin-left: auto; margin-right: auto; }
+.flex-content { display: flex; flex-direction: row; flex-wrap: wrap; }
+.col-1,
+.col-2 { padding-left: 15px; padding-right: 15px; display: inline-block; }
+.col-1 { width: 33.33%;}
+.col-2 { width: 66.66%; }
+
+.btn { display: inline-block; font-size: 0.9365em; text-decoration: none; border-radius: 100px; border: 2px solid #4140B0; padding: 10px 30px; color: #4140B0; }
+.btn.white-btn { color: #fff; border-color: #fff; }
+.btn .chevron img { width: auto; display: inline-block; margin-left: 5px; }
+
+/*** Header CSS ***/
+header { padding: 56px 0; background: #fff; }
+header h2 { text-align: center; max-width: 600px; margin: 0 auto; font-size: 2.25em; line-height: 1.25; color: #323B43; }
+header h2 span { color: #ee85d3; }
+
+/*** Block1 CSS ***/
+.intro-section { padding: 12px 0 100px; background: #fff; }
+.block1-content .img-col { order: 2; }
+.block1-content .content-col { order: 1; }
+
+/*** Testimonials CSS ***/
+.testimonial-section { background: #FAF8F5; padding-top: 66.65px; padding-bottom: 66.65px; }
+
+.quote-card { padding-left: 15px; padding-right: 15px; }
+.quote-card .inner-card { background: #fff; padding: 30px; border-radius: 5px; position: relative; }
+.quote-card .inner-card:before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; background: #F4B640; }
+.quote-card:nth-child(2n-6) .inner-card:before { background: #EF8B88; }
+.quote-card:nth-child(3n-6) .inner-card:before { background: #90C999; }
+.quote-card .star-rating img { max-width: 108px; margin-bottom: 41.5px; }
+.quote-card .quote-copy { color: #323B43; margin-top: 0; margin-bottom: 41.5px; }
+.quote-card .quote-copy p { margin: 0; }
+.quote-card .quote-author { display: flex; flex-wrap: wrap; flex-direction: row; align-items: center; }
+.quote-card .quote-author img { max-width: 63px; height: 63px; }
+.quote-card .quote-author .author-info { padding-left: 10px; }
+.quote-card .quote-author .author-info h3 {  font-family: 'Rubik'; font-size: 0.9365em; line-height: 1.5625em; margin: 0; font-weight: 500; color: #323B43; }
+.quote-card .quote-author .author-info h4 { margin: 0; font-family: 'Rubik'; font-weight: 400; font-size: 0.875em; color: #323B43; }
+
+/*** CTA CSS ***/
+.cta-section { padding: 90px 15px 80px; background: #fff; }
+.cta-block { margin-left: 15px; margin-right: 15px; background: #4040b0; padding: 46px 70px; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; border-radius: 5px; }
+.cta-block h3 { color: #fff; font-size: 1.125em; font-family: 'Rubik'; font-weight: 400; display: inline-block; width: 100%; max-width: 70%;  }
+.cta-block h3 span { display: block; font-size: 1.555em; font-family: 'Poppins'; }
+
+.cta-block .btn-container { text-align: right; display: inline-block; width: 100%; max-width: 30%; }
+
+/*** Responsive ***/
+@media (max-width: 767px) {
+  .flex-content { display: block; }
+  .col-1, .col-2 { width: 100%; }
+  
+  .quote-card { margin-bottom: 30px; }
+  .quote-card:last-child { margin-bottom: 0; }
+  .quote-card:nth-child(2n-6) .inner-card:before { background: #90C999; }
+.quote-card:nth-child(3n-6) .inner-card:before { background: #EF8B88; }
+  
+  .cta-block,
+  .cta-block h3,
+  .cta-block .btn-container { display: block; }
+  .cta-block h3,
+  .cta-block .btn-container { text-align: center; max-width: 100%; }
+  .cta-block h3 { font-size: 1em; }
+}
