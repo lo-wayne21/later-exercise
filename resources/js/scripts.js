@@ -141,12 +141,12 @@ class CTA extends React.Component {
 class LP extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <Header />
         <Intro />
         <Testimonials />
         <CTA />
-      </>
+      </div>
     );
   }
 }
