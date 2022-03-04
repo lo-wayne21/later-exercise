@@ -1,4 +1,5 @@
-class Header extends React.Component {render () {
+class Header extends React.Component {
+  render () {
     return (
       <header>
         <h2>Here’s what you can do <br />with <span>Linkin.bio</span> on Instagram</h2>
