@@ -1,4 +1,2 @@
 # later-exercise
-Working example: https://lo-wayne21.github.io/later-exercise/
-
-## Build & Execute
+Working link: https://lo-wayne21.github.io/later-exercise/
