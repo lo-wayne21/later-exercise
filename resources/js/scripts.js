@@ -108,7 +108,7 @@ class Testimonials extends React.Component {
             company = "HighSnobiety" 
           />
           <Quote
-            copy = "“Our Marketing Team was on the hunt for an Instagram feed widget to spruce up our website, and coincidentally learned of Linkin.bio Gallery. We especially love that the gallery images are \"clickable\" and can point to unique pages within our site!”" 
+            copy = '“Our Marketing Team was on the hunt for an Instagram feed widget to spruce up our website, and coincidentally learned of Linkin.bio Gallery. We especially love that the gallery images are "clickable" and can point to unique pages within our site!”' 
             img = "https://lo-wayne21.github.io/later-exercise/resources/images/Linkinbio--testimonial__kay.png" 
             name = "Kay" 
             company = "My Salon Desk" 
