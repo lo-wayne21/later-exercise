@@ -101,20 +101,18 @@ class Testimonials extends React.Component {
             name = "Hannah Weintraub" 
             company = "WELL + GOOD" 
           />
-          {this.renderQuote(
-            { copy: "“Linkin.bio has been a game changer for us, successfully allowing us to utilize Instagram as a traffic resource and not just as an engagement resource. We also now have better than ever alignment between our web content and Instagram.”",
-              img: "https://lo-wayne21.github.io/later-exercise/resources/images/testimonial-brock__highsnobiety.png",
-              name: "Brock Cardiner",
-              company: "HighSnobiety"
-            }
-          )} 
-          {this.renderQuote(
-            { copy: "“Our Marketing Team was on the hunt for an Instagram feed widget to spruce up our website, and coincidentally learned of Linkin.bio Gallery. We especially love that the gallery images are \"clickable\" and can point to unique pages within our site!”",
-              img: "https://lo-wayne21.github.io/later-exercise/resources/images/Linkinbio--testimonial__kay.png",
-              name: "Kay",
-              company: "My Salon Desk"
-            }
-          )} 
+          <Quote
+            copy = "“Linkin.bio has been a game changer for us, successfully allowing us to utilize Instagram as a traffic resource and not just as an engagement resource. We also now have better than ever alignment between our web content and Instagram.”" 
+            img = "https://lo-wayne21.github.io/later-exercise/resources/images/testimonial-brock__highsnobiety.png"
+            name = "Brock Cardiner" 
+            company = "HighSnobiety" 
+          />
+          <Quote
+            copy = "“Our Marketing Team was on the hunt for an Instagram feed widget to spruce up our website, and coincidentally learned of Linkin.bio Gallery. We especially love that the gallery images are \"clickable\" and can point to unique pages within our site!”" 
+            img = "https://lo-wayne21.github.io/later-exercise/resources/images/Linkinbio--testimonial__kay.png" 
+            name = "Kay" 
+            company = "My Salon Desk" 
+          />
         </div>
       </section>
     );
