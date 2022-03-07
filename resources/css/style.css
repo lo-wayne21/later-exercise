@@ -64,6 +64,7 @@ header h2 span { color: #ee85d3; }
 
 /*** Responsive ***/
 @media (max-width: 767px) {
+  .container { padding-left: 15px; padding-right: 15px; }
   .flex-content { display: block; }
   .col-1, .col-2 { width: 100%; }
   
@@ -75,7 +76,14 @@ header h2 span { color: #ee85d3; }
   .cta-block,
   .cta-block h3,
   .cta-block .btn-container { display: block; }
+  .cta-block { margin: 0; }
   .cta-block h3,
   .cta-block .btn-container { text-align: center; max-width: 100%; }
   .cta-block h3 { font-size: 1em; }
+}
+
+@media (max-width: 576px) {
+  body { font-size: 15px;}
+  header h2 { font-size: 1.6em; }
+  header h2 br { display: none; }
 }
