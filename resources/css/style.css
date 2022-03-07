@@ -39,6 +39,9 @@ header h2 span { color: #ee85d3; }
 
 /*** Testimonials CSS ***/
 .testimonial-section { background: #FAF8F5; padding-top: 66.65px; padding-bottom: 66.65px; }
+.testimonial-section .container { display: flex; flex-direction: row; flex-wrap: wrap; }
+.testimonial-section .container > .quote-card,
+.testimonial-section .container > .quote-card > .inner-card{ height: 100%; }
 
 .quote-card { padding-left: 15px; padding-right: 15px; }
 .quote-card .inner-card { background: #fff; padding: 30px; border-radius: 5px; position: relative; }
@@ -65,7 +68,8 @@ header h2 span { color: #ee85d3; }
 /*** Responsive ***/
 @media (max-width: 767px) {
   .container { padding-left: 15px; padding-right: 15px; }
-  .flex-content { display: block; }
+  .flex-content,
+  .testimonial-section .container { display: block; }
   .col-1, .col-2 { width: 100%; }
   
   .quote-card { margin-bottom: 30px; }
@@ -87,5 +91,6 @@ header h2 span { color: #ee85d3; }
   header h2 { font-size: 1.6em; }
   header h2 br { display: none; }
   
+  .cta-block { padding}
   .cta-block h3 span { font-size: 1.4em; }
 }
